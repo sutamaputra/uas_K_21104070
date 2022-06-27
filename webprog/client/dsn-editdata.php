@@ -19,12 +19,6 @@
     <input type="text" class="form-control" id="txnama">
     <div id="namaHelp" class="form-text">Ubah Nama dosen.</div>
   </div>
-
-  <div class="mb-3">
-    <label for="sts" class="form-label">Status</label>
-    <input type="date" class="form-control" id="txtgl">
-    <div id="stsHelp" class="form-text">Ubah status dosen.</div>
-  </div>
   
   <div class="mb-3">
     <label for="jkel" class="form-label">Jenis Kelamin</label>
@@ -34,6 +28,18 @@
         <option value="P"> Perempuan </option>
     </select>    
     <div id="jkelHelp" class="form-text">Pilih Jenis Kelamin dosen.</div>
+  </div>
+  
+  <div class="mb-3">
+    <label for="status" class="form-label">Status</label>
+    <select class="form-control" id="txsts">
+        <option value="-"> Pilih Jurusan </option>
+        <option value="M"> Sudah Menikah </option>
+        <option value="A"> Sudah Punya Anak </option>
+        <option value="C"> Sudah Punya Cucu </option>
+        <option value="J"> JOMBLO (kasihan) </option>
+    </select>    
+    <div id="stsHelp" class="form-text">Pilih Status.</div>
   </div>
   
   <button type="button" class="btn btn-primary" onclick="dsnupdatedata()">Update Data</button>

@@ -1,13 +1,14 @@
 <?php
     $h["error"] = 1; 
-    if(isset($_POST["txNIDN"])){
+    if(isset($_POST["txNIM"])){
         include_once("dbkoneksi2.php");
-        $nidn = $_POST["txNIDN"];
+        $nim = $_POST["txNIM"];
         $nama = $_POST["txNAMA"];
+        $jur =  $_POST["txJUR"];
         $jkel = $_POST["txJKEL"];
-        $sts = $_POST["txSTS"];
+        $talag = $_POST["txTALAG"];
 
-        $sql = "INSERT INTO dsn(NIDN,NAMA,JK,STS) VALUES('$nidn','$nama','$jkel','$sts')";
+        $sql = "INSERT INTO mhs(NIM,NAMA,JURUSAN,JK,TGLLAHIR) VALUES('$nim','$nama','$jur','$jkel','$talag')";
         $hsl = mysqli_query($cnn,$sql);
         if($hsl){
             $h["error"] = 0; 

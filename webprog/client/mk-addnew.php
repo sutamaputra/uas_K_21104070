@@ -7,7 +7,7 @@
   Data Gagal ditambahkan
 </div>
 
-<form id="mhsbaru">
+<form id="mkbaru">
   <div class="mb-3">
     <label for="code" class="form-label">Code Matakuliah</label>
     <input type="text" class="form-control" id="txcode">
@@ -41,6 +41,8 @@
     <div id="smstrHelp" class="form-text">Pilih Semester.</div>
   </div>
 
+  <button type="button" class="btn btn-primary" onclick="mkaddnew()">Simpan Data</button>
+</form>
 <script src="mk-update.js"></script>
 <script>
   document.getElementById("sukses").style.display="none";

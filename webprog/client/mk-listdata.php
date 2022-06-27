@@ -1,7 +1,7 @@
-<div id="konten"></div>
+<div id="konten3"></div>
 <script>
   const xmlhttp = new XMLHttpRequest()
-  xmlhttp.open("GET","http://localhost/webprog/server/homepage3php")
+  xmlhttp.open("GET","http://localhost/webprog/server/homepage3.php")
   xmlhttp.send()
 
   xmlhttp.onload = function(){
@@ -25,6 +25,6 @@
         }
   tx +='</tbody></table>'
 
-    document.getElementById("konten").innerHTML = tx
+    document.getElementById("konten3").innerHTML = tx
   }
 </script>  

@@ -14,8 +14,8 @@ gh.onload = function(){
     for(i=0;i<dta["isi"].length;i++){
         document.getElementById("txcode").value = dta["isi"][i][0];
         document.getElementById("txmk").value = dta["isi"][i][1];
-        document.getElementById("txsks").value = dta["isi"][i][3];
-        document.getElementById("txsmstr").value = dta["isi"][i][2];
+        document.getElementById("txsks").value = dta["isi"][i][2];
+        document.getElementById("txsmstr").value = dta["isi"][i][3];
     }
     console.log(dta);
 }

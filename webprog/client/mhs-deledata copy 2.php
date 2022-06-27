@@ -1,17 +1,17 @@
-<h3>Edit data Matakuliah</h3>
+<h3>Hapus data Matakuliah</h3>
 
 <div class="alert alert-primary" role="alert" id="sukses">
-  Data Telah diubah
+  Data Telah di hapus
 </div>
 <div class="alert alert-danger" role="alert" id="gagal">
-  Data Gagal diubah
+  Data Gagal di hapus
 </div>
 
-<form id="mkUpdate">
+<form id="mkDelete">
     <div class="mb-3">
-    <label for="code" class="form-label">kode Matakuliah</label>
+    <label for="code" class="form-label">Code Matakuliah</label>
     <input type="text" class="form-control" id="txcode" disable>
-    <div id="codeHelp" class="form-text">isikan kode Matakuliah.</div>
+    <div id="codeHelp" class="form-text">isikan Code Matakuliah.</div>
   </div>
 
   <div class="mb-3">
@@ -40,16 +40,17 @@
     </select>    
     <div id="smstrHelp" class="form-text">Pilih Semester.</div>
   </div>
-  
-  <button type="button" class="btn btn-primary" onclick="mkupdatedata()">Update Data</button>
+  </span>
+  <button type="button" class="btn btn-danger" onclick="mkdeletedata()">Hapus Data</button>
   <button type="button" class="btn btn-secondary" onclick="batal()"> Batal </button>
 </form>
 
 <script src="mk-caridata.js"></script>
-<script src="mk-updatedata.js"></script>
+<script src="mk-deletedata.js"></script>
 <script>
   document.getElementById("sukses").style.display="none";
   document.getElementById("gagal").style.display="none";
+  document.getElementById("sembunyi").style.display="none";
 
   function batal(){
       location.replace("http://localhost/webprog/client/index.php?pg=mk");

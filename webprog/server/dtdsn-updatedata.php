@@ -4,13 +4,13 @@
         include_once("dbkoneksi2.php");
         $nidn = $_POST["txNIDN"];
         $nama = $_POST["txNAMA"];
-        $sts =  $_POST["txSTS"];
         $jkel = $_POST["txJKEL"];
+        $sts =  $_POST["txSTS"];
 
         $sql = "UPDATE dsn SET 
             NAMA='$nama',
-            STS='$sts',
-            JK='$jkel'
+            JK='$jkel',
+            STS='$sts'
             WHERE NIDN='$nidn'";
             
         $hsl = mysqli_query($cnn,$sql);

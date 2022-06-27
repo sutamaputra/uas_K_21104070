@@ -3,9 +3,9 @@ function dsnupdatedata(){
     
     let nidn= document.getElementById("txnidn").value;
     let nama = document.getElementById("txnama").value;
-    let jkel = document.getElementById("txjkel").value;
     let sts = document.getElementById("txsts").value;
-    let dta = "txNIDN="+nidn+"&txNAMA="+nama+"&txJKEL="+jkel+"&txSTS="+sts
+    let jkel = document.getElementById("txjkel").value;
+    let dta = "txNIDN="+nidn+"&txNAMA="+nama+"&txSTS="+sts+"&txJKEL="+jkel
     console.log(dta)
 
     xmlhttp = new XMLHttpRequest();

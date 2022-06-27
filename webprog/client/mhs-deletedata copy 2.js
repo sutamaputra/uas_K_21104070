@@ -1,15 +1,12 @@
-function mkaddnew(){
-    document.getElementById("mkbaru").style.display="none"
+function mkdeletedata(){
+    document.getElementById("mkDelete").style.display="none"
     
     let code = document.getElementById("txcode").value;
-    let mk = document.getElementById("txmk").value;
-    let sks = document.getElementById("txsks").value;
-    let smstr = document.getElementById("txsmstr").value;
-    let dta = "txCODE="+code+"&txMK="+mk+"&txSKS="+sks+"&txSMSTR="+smstr
+    let dta = "txcode="+code
     console.log(dta)
 
     xmlhttp = new XMLHttpRequest();
-    xmlhttp.open("POST","http://localhost/webprog/server/dtamk-insertdata.php");
+    xmlhttp.open("POST","http://localhost/webprog/server/dtmk-hapusdata.php");
     xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
     xmlhttp.send(dta);
 
@@ -23,6 +20,6 @@ function mkaddnew(){
         }
         setTimeout(()=>{
             window.location.href="index.php?pg=mk";
-        },5000)
+        },2000)
     }
 }
