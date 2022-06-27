@@ -1,4 +1,4 @@
-function mkdeletedata(){
+function mkdeledata(){
     document.getElementById("mkDelete").style.display="none"
     
     let code = document.getElementById("txcode").value;

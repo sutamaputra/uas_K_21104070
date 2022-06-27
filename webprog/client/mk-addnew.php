@@ -43,7 +43,7 @@
 
   <button type="button" class="btn btn-primary" onclick="mkaddnew()">Simpan Data</button>
 </form>
-<script src="mk-update.js"></script>
+<script src="mk-addnew.js"></script>
 <script>
   document.getElementById("sukses").style.display="none";
   document.getElementById("gagal").style.display="none";

@@ -17,7 +17,7 @@
   <div class="mb-3">
     <label for="matakuliah" class="form-label">Matakuliah</label>
     <input type="text" class="form-control" id="txmk">
-    <div id="mkHelp" class="form-text">isikan Nama mahasiswa.</div>
+    <div id="mkHelp" class="form-text">isikan Nama matakuliah.</div>
   </div>
 
   <div class="mb-3">
@@ -41,7 +41,7 @@
     <div id="smstrHelp" class="form-text">Pilih Semester.</div>
   </div>
   </span>
-  <button type="button" class="btn btn-danger" onclick="mkdeletedata()">Hapus Data</button>
+  <button type="button" class="btn btn-danger" onclick="mkdeledata()">Hapus Data</button>
   <button type="button" class="btn btn-secondary" onclick="batal()"> Batal </button>
 </form>
 

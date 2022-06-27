@@ -57,7 +57,6 @@
 <script>
   document.getElementById("sukses").style.display="none";
   document.getElementById("gagal").style.display="none";
-  document.getElementById("sembunyi").style.display="none";
 
   function batal(){
       location.replace("http://localhost/webprog/client/index.php?pg=mhs");
